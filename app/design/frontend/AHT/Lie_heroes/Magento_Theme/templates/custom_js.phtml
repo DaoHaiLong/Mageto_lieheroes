@@ -1,0 +1,241 @@
+<!-- numberbutton -->
+<!-- <script type="text/javascript">
+    // This is the javascript codes help us to increase and decrease qty
+    require([
+        'jquery'
+    ], function($) {
+        $(document).on('click', '.add-qty-button', function() {
+            let abc = $(this).closest('.number-input-form-qty').find('input');
+            abc.val(parseInt(abc.val()) + 1);
+            if(abc.val()>100){
+                abc.val(100);
+            }
+        });
+        $(document).on('click', '.minus-qty-button', function() {
+            let abc = $(this).closest('.number-input-form-qty').find('input');
+            abc.val(parseInt(abc.val()) - 1);
+            if(abc.val()<1){
+                abc.val(1);
+            }
+        });
+    });
+    
+</script> -->
+
+<!--**************** slick******************* -->
+<!-- homepage banner slick -->
+
+<!-- <script>
+    require([
+        'jquery',
+        'slick',
+        'domReady!'
+    ], function ($) {
+        $(".homepage-slider").slick({
+            dots: false,
+            infinite: true,
+            speed: 300,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            arrows: false,
+            autoplay: true,
+            autoplaySpeed: 5000,
+            mobileFirst: true
+        });
+        // gird product slick 
+        $(".widget-product-grid").slick({
+            dots: true,
+            infinite: true,
+            speed: 300,
+            slidesToShow: 4,
+            slidesToScroll: 4,
+            responsive: [
+                {
+                    breakpoint: 1280,
+                    settings: {
+                        slidesToShow: 3,
+                        slidesToScroll: 3
+                    }
+                },
+                {
+                    breakpoint: 768,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 2
+                    }
+                },
+                {
+                    breakpoint: 600,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                    }
+                }
+            ]
+        });
+
+        $('.reason-to-buy-block').slick({
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            dots: false,
+            infinite: true,
+            speed: 300,
+            arrows: false,
+            autoplay: true,
+            autoplaySpeed: 5000,
+            
+            mobileFirst: true,
+            responsive: [
+                {
+                    breakpoint: 1280,
+                    settings: {
+                        slidesToShow: 3,
+                        slidesToScroll: 1,
+                        dots: false,
+                        infinite: false,
+                        speed: 300,
+                        arrows: false,
+                        autoplay: false,
+                        autoplaySpeed: 5000,
+                    }
+                }
+            ]
+        });
+        $('.video-block-slider').slick({
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            dots: false,
+            infinite: true,
+            speed: 300,
+            arrows: false,
+            autoplay: true,
+            autoplaySpeed: 5000,
+            centerPadding: '20px',
+            mobileFirst: true,
+            responsive: [
+                {
+                    breakpoint: 1280,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 1,
+                        dots: false,
+                        infinite: false,
+                        speed: 300,
+                        arrows: false,
+                        autoplay: false,
+                        autoplaySpeed: 5000,
+                        centerPadding: '20px',
+                        
+                    }
+                }
+            ]
+        });
+
+
+
+
+        var viewportWidth = $(window).width();
+        if( viewportWidth >= 1280 ){
+            var product_Rows = 1;
+            var product_Slides = 4;
+            var product_Arrows = true;
+            var insta_Rows = 1;
+            var insta_Slides = 5;
+            var insta_Arrows = true;
+            var insta_Dots = false;
+        } else{
+            var product_Rows = 2;
+            var product_Slides = 2;
+            var product_Arrows = false;
+            var insta_Rows = 2;
+            var insta_Slides = 2;
+            var insta_Arrows = false;
+            var insta_Dots = true;
+        }
+        $(".widget-product-slick").slick({
+            rows: product_Rows,
+            dots: false,
+            infinite: false,
+            speed: 300,
+            slidesToShow: product_Slides,
+            slidesToScroll: 1,
+            arrows: product_Arrows,
+        });
+        $(".instagram-block").slick({
+            rows: insta_Rows,
+            dots: insta_Dots,
+            infinite: true,
+            speed: 300,
+            slidesToShow: insta_Slides,
+            slidesToScroll: 1,
+            arrows: insta_Arrows,
+            autoplay: true,
+            autoplaySpeed: 5000,
+        });
+
+
+
+        //responsive
+        $(document).ready(function(){
+            $(window).resize(function(){
+                var viewportWidth = $(window).width();
+                if( viewportWidth >= 1280 ){
+                    var product_Rows = 1;
+                    var product_Slides = 4;
+                    var product_Arrows = true;
+                    var insta_Rows = 1;
+                    var insta_Slides = 5;
+                    var insta_Arrows = true;
+                    var insta_Dots = false;
+                } else{
+                    var product_Rows = 2;
+                    var product_Slides = 2;
+                    var product_Arrows = false;
+                    var insta_Rows = 2;
+                    var insta_Slides = 2;
+                    var insta_Arrows = false;
+                    var insta_Dots = true;
+                }
+                $(".widget-product-slick").slick('unslick');
+                $(".widget-product-slick").slick({
+                    rows: product_Rows,
+                    dots: false,
+                    infinite: false,
+                    speed: 300,
+                    slidesToShow: product_Slides,
+                    slidesToScroll: 1,
+                    arrows: product_Arrows,
+                });
+                $(".instagram-block").slick('unslick');
+                $(".instagram-block").slick({
+                    rows: insta_Rows,
+                    dots: insta_Dots,
+                    infinite: true,
+                    speed: 300,
+                    slidesToShow: insta_Slides,
+                    slidesToScroll: 1,
+                    arrows: insta_Arrows,
+                    autoplay: true,
+                    autoplaySpeed: 5000,
+                });
+            });
+        });
+        
+        
+    });
+</script> -->
+
+
+<script type="text/javascript">
+require(['jquery',
+    'mage/accordion'
+], function($) {
+    $("#accordion").accordion({
+        active: "0",
+        collapsible: true,
+        openedState: "active",
+        multipleCollapsible: true
+    });
+});
+</script>
+

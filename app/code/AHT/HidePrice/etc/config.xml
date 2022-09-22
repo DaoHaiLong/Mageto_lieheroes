@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
+    <default>
+       <aht_hideprice>
+            <general>
+                <enabled>0</enabled>
+            </general>
+        </aht_hideprice>
+        <aht_hideprice>
+            <general>
+                <wording_hide_price>Login To See Price</wording_hide_price>
+            </general>
+        </aht_hideprice>
+    </default>
+</config>

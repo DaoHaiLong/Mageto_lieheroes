@@ -1,0 +1,89 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © Magento, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+-->
+<page layout="3columns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <update handle="default_head_blocks"/>
+    <body>
+        <!-- <referenceContainer name="page.wrapper">
+            <block name="custom_js.phtml" class="Magento\Framework\View\Element\Template" template="Magento_Theme::custom_js.phtml" />
+        </referenceContainer> -->
+        <!-- <block name="require.js" class="Magento\Framework\View\Element\Template" template="Magento_Theme::page/js/require_js.phtml" /> -->
+        <referenceContainer name="header.container">
+            <referenceContainer name="header.panel.wrapper" htmlClass="panel wrapper" htmlTag="div" remove="true">
+            </referenceContainer>
+
+            <referenceContainer name="header-wrapper">
+                <block class="Magento\Theme\Block\Html\Header\Logo" name="logo"/>
+                <block name="currencys" class="Magento\Framework\View\Element\Template" template="Magento_Directory::currency.phtml" />
+            </referenceContainer>
+            
+            
+        </referenceContainer>
+        <container name="header.bottom">
+            <block class="Magento\Cms\Block\Block" name="header-bottom">
+                <arguments>
+                    <argument name="block_id" xsi:type="string">header-bottom</argument>
+                </arguments>
+            </block>
+        </container>
+    
+        <move element="header.bottom" destination="page.top" before="breadcrumbs"/>
+        <move element="store.settings.currency" destination="header-wrapper" before="-" />
+
+        <referenceContainer name="footer-container">
+            <block class="Magento\Cms\Block\Block" name="footer-top" before="-">
+                <arguments>
+                    <argument name="block_id" xsi:type="string">footer-top</argument>
+                </arguments>
+            </block>
+
+            <block class="Magento\Cms\Block\Block" name="footer-wordmark" after="footer-top">
+                    <arguments>
+                        <argument name="block_id" xsi:type="string">footer-wordmark</argument>
+                    </arguments>
+            </block>
+
+            <referenceContainer name="footer">
+                <referenceBlock name="footer_links" remove="true">
+                </referenceBlock>
+                
+                <block class="Magento\Cms\Block\Block" name="footer-links">
+                    <arguments>
+                        <argument name="block_id" xsi:type="string">footer-links</argument>
+                    </arguments>
+                </block>
+                <container name="footer.left"  htmlTag="div" htmlClass="footer-left">
+                    <block class="Magento\Cms\Block\Block" name="footer-newlestter">
+                        <arguments>
+                            <argument name="block_id" xsi:type="string">footer-newlestter</argument>
+                        </arguments>
+                    </block>
+                    <block class="Magento\Cms\Block\Block" name="footer-left-icon">
+                        <arguments>
+                            <argument name="block_id" xsi:type="string">footer-left-icon</argument>
+                        </arguments>
+                    </block>
+                </container>
+                <referenceBlock name="copyright" remove ="true">
+                </referenceBlock>
+               
+            </referenceContainer>
+            <block class="Magento\Cms\Block\Block" name="footer-copyright">
+                    <arguments>
+                        <argument name="block_id" xsi:type="string">footer-copyright</argument>
+                    </arguments>
+            </block>
+        </referenceContainer>
+        
+        <move element="form.subscribe" destination="footer.left" before="footer-left-icon" after="footer-newlestter" />
+        <!-- <move element="top.links" destination="header-wrapper" before="logo" /> -->
+        <!-- <move element="authorization.link" destination="header-wrapper" after="logo" />
+        <move element="authorization-link-login" destination="header-wrapper" after="logo" /> -->
+        
+        <move element="top.links" destination="header-wrapper" after="logo" />
+    </body>
+</page>

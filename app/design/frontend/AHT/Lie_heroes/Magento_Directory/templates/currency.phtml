@@ -1,0 +1,47 @@
+<?php
+/**
+ * Copyright © Magento, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ * - <?= $currencies[$currentCurrencyCode] ? $block->escapeHtml($currencies[$currentCurrencyCode]) : '' ?>
+ * ?> - <?= $block->escapeHtml($_name)
+ */
+
+/**
+ * Currency switcher
+ *
+ * @var \Magento\Directory\Block\Currency $block
+ */
+
+?>
+<?php if ($block->getCurrencyCount() > 1) : ?>
+    <?php $currencies = $block->getCurrencies(); ?>
+    <?php $currentCurrencyCode = $block->getCurrentCurrencyCode(); ?>
+    <?php $id = $block->getIdModifier() ? '-' . $block->getIdModifier() : '' ?>
+    <div class="switcher currency switcher-currency" id="switcher-currency<?= $block->escapeHtmlAttr($id) ?>">
+        <strong class="label switcher-label"><span><?= $block->escapeHtml(__('Currency')) ?></span></strong>
+        <div class="actions dropdown options switcher-options">
+            <!-- <img class="image-option" id="AUS" src="pub/media/wysiwyg/lie_header/australia.png" alt="" style="display: block;"/>
+            <img class="image-option" id="USD" src="pub/media/wysiwyg/lie_header/united-states-of-america.png" alt="" style="display: none;"/>
+            <img class="image-option" id="VND" src="pub/media/wysiwyg/lie_header/vietnam.png" alt="" style="display: none;"/> -->
+            <div class="action toggle switcher-trigger"
+                 id="switcher-currency-trigger<?= $block->escapeHtmlAttr($id) ?>"
+                 data-mage-init='{"dropdown":{}}'
+                 data-toggle="dropdown"
+                 data-trigger-keypress-button="true">
+                 <img  src="pub/media/wysiwyg/lie_header/australia.png" alt="" />  
+                <strong class="language-<?= $block->escapeHtml($block->getCurrentCurrencyCode()) ?>">
+                    <span><?= $block->escapeHtml($currentCurrencyCode) ?> </span>
+                </strong>
+            </div>
+            <ul class="dropdown switcher-dropdown" data-target="dropdown">
+                <?php foreach ($currencies as $_code => $_name) : ?>
+                    <?php if ($_code != $currentCurrencyCode) : ?>
+                        <li class="currency-<?= $block->escapeHtmlAttr($_code) ?> switcher-option">
+                            <a href="#" data-post='<?= /* @noEscape */ $block->getSwitchCurrencyPostData($_code) ?>'><?= $block->escapeHtml($_code) ?></a>
+                        </li>
+                    <?php endif; ?>
+                <?php endforeach; ?>
+            </ul>
+        </div>
+    </div>
+<?php endif; ?>

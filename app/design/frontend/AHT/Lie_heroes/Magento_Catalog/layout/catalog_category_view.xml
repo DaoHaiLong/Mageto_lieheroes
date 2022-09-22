@@ -1,0 +1,73 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © Magento, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+-->
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" layout="2columns-left" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <referenceContainer name="columns.top">
+            <container name="category.view.container" htmlTag="div" htmlClass="category-view" after="-">
+                <block class="Magento\Catalog\Block\Category\View" name="category.image" template="Magento_Catalog::category/image.phtml"/>
+
+            </container>
+        </referenceContainer>
+        <referenceContainer name="content" >
+<!-- 
+            <block class="Magento\Cms\Block\Block" name="new-product-bottom-banner" >
+                <arguments>
+                    <argument name="block_id" xsi:type="string">new-product-bottom-banner</argument>
+                </arguments>
+            </block> -->
+           <!-- <container name="product.catalog.bottom" htmlTag="div" htmlClass="product-catalog-banner">
+                 <block class="Magento\Cms\Block\Block" name="new-product-bottom-banner" >
+                    <arguments>
+                        <argument name="block_id" xsi:type="string">new-product-bottom-banner</argument>
+                    </arguments>
+                </block>
+           </container> -->
+
+            <block class="Magento\Cms\Block\Block" name="catalog-category-product-recently" >
+                <arguments>
+                    <argument name="block_id" xsi:type="string">catalog-category-product-recently</argument>
+                </arguments>
+            </block>
+            
+            <block class="Magento\Cms\Block\Block" name="catalog-product-content" after="catalog-category-product-recently">
+                <arguments>
+                    <argument name="block_id" xsi:type="string">catalog-product-content</argument>
+                </arguments>
+            </block>
+            <container name="catalog.accordion" htmlTag="div" htmlClass="product-catalog-accordion">
+                <container name="catalog.accordion.left" htmlTag="div" htmlClass="product-catalog-accordion-left">
+                    <block class="Magento\Cms\Block\Block" name="category-random-question-accordion" after="catalog-product-content">
+                        <arguments>
+                            <argument name="block_id" xsi:type="string">category-random-question-accordion</argument>
+                        </arguments>
+                    </block>
+                </container>
+                <container name="catalog.accordion.right" htmlTag="div" htmlClass="product-catalog-accordion-right">
+                    <block class="Magento\Cms\Block\Block" name="category-random-question-accordion2" after="catalog-product-content">
+                        <arguments>
+                            <argument name="block_id" xsi:type="string">category-random-question-accordion2</argument>
+                        </arguments>
+                    </block>
+                </container>
+            </container>
+            
+            
+           <referenceContainer name="sidebar.main" remove ="true">
+            </referenceContainer>
+
+        </referenceContainer>
+       
+        
+    </body>
+</page>
+<!-- <?php
+                echo $block->getLayout()
+                    ->createBlock('Magento\Cms\Block\Block')
+                    ->setBlockId('new-product-bottom-banner')
+                    ->toHtml();
+            ?> -->
