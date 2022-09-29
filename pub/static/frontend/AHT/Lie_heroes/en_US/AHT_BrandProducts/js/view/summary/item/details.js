@@ -1,0 +1,1 @@
+/var/www/html/magento235/app/code/AHT/BrandProducts/view/frontend/web/js/view/summary/item/details.js

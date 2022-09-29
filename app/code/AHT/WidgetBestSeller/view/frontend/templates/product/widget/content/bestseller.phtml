@@ -68,8 +68,16 @@ if ($exist = ($this->getBestsellerProduct() && $this->getBestsellerProduct()->ge
                                 echo $this->getProductPriceHtml($_product, $type);
                             ?>
                             <!-- Qty -->
-                            <div class="best-seller-qty" style="margin: 0 80px;">
-                                Sold: <?php echo number_format($item->getQtyOrdered(),0);?>
+                            <div class="best-seller-qty" style="margin: 10px 115px; display:flex;">
+                                <img style="width:30px;" src="<?php echo $block->getUrl("pub/media/wysiwyg/")?>check-out-cart.png"> 
+                                <p class="solded" style="padding: 5px 5px;
+                                                        color: #000000;
+                                                        font-family: 'Montserrat';
+                                                        font-size: 16px;
+                                                        font-weight: 700;">
+
+                                    <?php echo number_format($item->getQtyOrdered(),0);?>
+                                </p>
                             </div> 
                             <div class="product-item-actions">
                                 <div class="actions-primary">

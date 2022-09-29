@@ -1,0 +1,1 @@
+/var/www/html/magento235/app/design/frontend/AHT/Lie_heroes/Magento_Catalog/web/js/catalog-add-to-cart.js

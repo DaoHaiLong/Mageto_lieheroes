@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /**
  * Copyright © Magento, Inc. All rights reserved.
  * See COPYING.txt for license details.
@@ -154,7 +155,7 @@ span.klarna-payments-method-cell > img {
   vertical-align: top;
 }
 .file-uploader-button {
-  background: #eeeeee;
+  background: #eee;
   border: 1px solid #cccccc;
   box-sizing: border-box;
   color: #333333;
@@ -251,7 +252,7 @@ span.klarna-payments-method-cell > img {
   -moz-osx-font-smoothing: grayscale;
   font-size: 4rem;
   line-height: inherit;
-  color: #cccccc;
+  color: #ccc;
   content: '\e626';
   font-family: 'luma-icons';
   vertical-align: middle;
@@ -262,7 +263,7 @@ span.klarna-payments-method-cell > img {
   text-align: center;
 }
 .file-uploader-preview .preview-video:hover:before {
-  color: #cccccc;
+  color: #ccc;
 }
 .file-uploader-preview .preview-video:before {
   left: 0;
@@ -281,7 +282,7 @@ span.klarna-payments-method-cell > img {
   -moz-osx-font-smoothing: grayscale;
   font-size: 7rem;
   line-height: inherit;
-  color: #cccccc;
+  color: #ccc;
   content: '\e626';
   font-family: 'luma-icons';
   vertical-align: middle;
@@ -292,7 +293,7 @@ span.klarna-payments-method-cell > img {
   text-align: center;
 }
 .file-uploader-preview .preview-document:hover:before {
-  color: #cccccc;
+  color: #ccc;
 }
 .file-uploader-preview .preview-document:before {
   left: 0;
@@ -304,7 +305,7 @@ span.klarna-payments-method-cell > img {
 }
 .file-uploader-preview,
 .file-uploader-placeholder {
-  background: #ffffff;
+  background: #fff;
   border: 1px solid #cacaca;
   box-sizing: border-box;
   cursor: pointer;
@@ -351,7 +352,7 @@ span.klarna-payments-method-cell > img {
   -moz-osx-font-smoothing: grayscale;
   font-size: 5rem;
   line-height: inherit;
-  color: #cccccc;
+  color: #ccc;
   content: '\e626';
   font-family: 'luma-icons';
   vertical-align: middle;
@@ -362,7 +363,7 @@ span.klarna-payments-method-cell > img {
   text-align: center;
 }
 .file-uploader-placeholder.placeholder-document:hover:before {
-  color: #cccccc;
+  color: #ccc;
 }
 .file-uploader-placeholder.placeholder-document:before {
   left: 0;
@@ -380,7 +381,7 @@ span.klarna-payments-method-cell > img {
   -moz-osx-font-smoothing: grayscale;
   font-size: 5rem;
   line-height: inherit;
-  color: #cccccc;
+  color: #ccc;
   content: '\e626';
   font-family: 'luma-icons';
   vertical-align: middle;
@@ -391,7 +392,7 @@ span.klarna-payments-method-cell > img {
   text-align: center;
 }
 .file-uploader-placeholder.placeholder-image:hover:before {
-  color: #cccccc;
+  color: #ccc;
 }
 .file-uploader-placeholder.placeholder-image:before {
   left: 0;
@@ -409,7 +410,7 @@ span.klarna-payments-method-cell > img {
   -moz-osx-font-smoothing: grayscale;
   font-size: 3rem;
   line-height: inherit;
-  color: #cccccc;
+  color: #ccc;
   content: '\e626';
   font-family: 'luma-icons';
   vertical-align: middle;
@@ -420,7 +421,7 @@ span.klarna-payments-method-cell > img {
   text-align: center;
 }
 .file-uploader-placeholder.placeholder-video:hover:before {
-  color: #cccccc;
+  color: #ccc;
 }
 .file-uploader-placeholder.placeholder-video:before {
   left: 0;
@@ -507,7 +508,7 @@ span.klarna-payments-method-cell > img {
   text-align: center;
 }
 .data-grid-file-uploader .file-uploader-button:hover:before {
-  color: #666666;
+  color: #666;
 }
 .data-grid-file-uploader .action-select-wrap {
   float: left;
@@ -526,7 +527,7 @@ span.klarna-payments-method-cell > img {
   margin: 0 0 0 -5px;
 }
 .data-grid-file-uploader .action-select-wrap .action-select:hover:after {
-  border-color: #666666 transparent transparent transparent;
+  border-color: #666 transparent transparent transparent;
 }
 .data-grid-file-uploader .action-select-wrap .action-select > span {
   display: none;
@@ -560,7 +561,7 @@ span.klarna-payments-method-cell > img {
     width: 0;
   }
   .field-tooltip .field-tooltip-content::before {
-    border-bottom-color: #999999;
+    border-bottom-color: #999;
   }
   .field-tooltip .field-tooltip-content::after {
     border-bottom-color: #f4f4f4;
@@ -581,442 +582,6 @@ span.klarna-payments-method-cell > img {
   }
 }
 @media all and (min-width: 768px), print {
-  .abs-product-options-list-desktop dt,
-  .block-giftregistry-shared .item-options dt {
-    clear: left;
-    float: left;
-    margin: 0 10px 5px 0;
-  }
-  .block-giftregistry-shared .item-options dt:after {
-    content: ': ';
-  }
-  .abs-product-options-list-desktop dd,
-  .block-giftregistry-shared .item-options dd {
-    display: inline-block;
-    float: left;
-    margin: 0 0 5px;
-  }
-  .abs-button-desktop {
-    width: auto;
-  }
-  .abs-blocks-2columns,
-  .abs-discount-block-desktop .block,
-  .amazon-addresses .amazon-address,
-  .login-container .block,
-  .account .column.main .block:not(.widget) .block-content .box,
-  .form-address-edit > .fieldset,
-  .form-edit-account .fieldset,
-  .storecredit .block,
-  .paypal-review-discount .block,
-  .cart-discount .block {
-    width: 48%;
-  }
-  .abs-discount-block-desktop .block:nth-child(1),
-  .amazon-addresses .amazon-address:nth-child(1),
-  .login-container .block:nth-child(1),
-  .account .column.main .block:not(.widget) .block-content .box:nth-child(1),
-  .form-address-edit > .fieldset:nth-child(1),
-  .form-edit-account .fieldset:nth-child(1),
-  .storecredit .block:nth-child(1),
-  .paypal-review-discount .block:nth-child(1),
-  .cart-discount .block:nth-child(1) {
-    clear: left;
-    float: left;
-  }
-  .abs-discount-block-desktop .block:nth-child(2),
-  .amazon-addresses .amazon-address:nth-child(2),
-  .login-container .block:nth-child(2),
-  .account .column.main .block:not(.widget) .block-content .box:nth-child(2),
-  .form-address-edit > .fieldset:nth-child(2),
-  .form-edit-account .fieldset:nth-child(2),
-  .storecredit .block:nth-child(2),
-  .paypal-review-discount .block:nth-child(2),
-  .cart-discount .block:nth-child(2) {
-    float: right;
-  }
-  .abs-discount-block-desktop .block:nth-child(2) + *,
-  .amazon-addresses .amazon-address:nth-child(2) + *,
-  .login-container .block:nth-child(2) + *,
-  .account .column.main .block:not(.widget) .block-content .box:nth-child(2) + *,
-  .form-address-edit > .fieldset:nth-child(2) + *,
-  .form-edit-account .fieldset:nth-child(2) + *,
-  .storecredit .block:nth-child(2) + *,
-  .paypal-review-discount .block:nth-child(2) + *,
-  .cart-discount .block:nth-child(2) + * {
-    clear: both;
-  }
-  .abs-margin-for-blocks-and-widgets-desktop,
-  .page-main .block,
-  .customer-review .product-details {
-    margin-bottom: 50px;
-  }
-  .abs-reset-left-margin-desktop,
-  .column.main .paypal-review .actions-toolbar,
-  .column.main .block-giftregistry-shared-items .actions-toolbar {
-    margin-left: 0;
-  }
-  .abs-action-remove-desktop,
-  .abs-add-fields-desktop .fieldset .additional .action.remove,
-  .form-giftregistry-share .fieldset .additional .action.remove,
-  .form-giftregistry-edit .fieldset .additional .action.remove,
-  .form-create-return .fieldset .additional .action.remove,
-  .form.send.friend .fieldset .additional .action.remove {
-    margin-left: 90%;
-  }
-  .abs-add-fields-desktop .fieldset .field .control,
-  .form-giftregistry-share .fieldset .field .control,
-  .form-giftregistry-edit .fieldset .field .control,
-  .form-create-return .fieldset .field .control,
-  .form.send.friend .fieldset .field .control {
-    width: auto;
-  }
-  .abs-margin-for-forms-desktop {
-    margin-left: 25.8%;
-  }
-  .abs-visually-hidden-desktop,
-  .modes-label,
-  .block-search .label,
-  .block-collapsible-nav .title {
-    border: 0;
-    clip: rect(0, 0, 0, 0);
-    height: 1px;
-    margin: -1px;
-    overflow: hidden;
-    padding: 0;
-    position: absolute;
-    width: 1px;
-  }
-  .abs-add-clearfix-desktop:before,
-  .abs-add-clearfix-desktop:after,
-  .amazon-addresses:before,
-  .amazon-addresses:after,
-  .paypal-review .block-content:before,
-  .paypal-review .block-content:after,
-  .paypal-review-discount:before,
-  .paypal-review-discount:after,
-  .order-review-form:before,
-  .order-review-form:after,
-  .block-cart-failed .block-content:before,
-  .block-cart-failed .block-content:after,
-  .cart-container:before,
-  .cart-container:after,
-  .login-container:before,
-  .login-container:after,
-  .account .page-title-wrapper:before,
-  .account .page-title-wrapper:after,
-  .account .column.main .block:not(.widget) .block-content:before,
-  .account .column.main .block:not(.widget) .block-content:after,
-  .block-addresses-list .items.addresses:before,
-  .block-addresses-list .items.addresses:after,
-  .block-giftregistry-shared .item-options:before,
-  .block-giftregistry-shared .item-options:after,
-  .data.table .gift-wrapping .nested:before,
-  .data.table .gift-wrapping .nested:after,
-  .data.table .gift-wrapping .content:before,
-  .data.table .gift-wrapping .content:after,
-  .block-wishlist-management:before,
-  .block-wishlist-management:after,
-  .magento-rma-guest-returns .column.main .block.block-order-details-view:before,
-  .magento-rma-guest-returns .column.main .block.block-order-details-view:after,
-  .order-links:before,
-  .order-links:after,
-  .account .column.main .block.block-order-details-view:before,
-  .account .column.main .block.block-order-details-view:after,
-  [class^='sales-guest-'] .column.main .block.block-order-details-view:before,
-  [class^='sales-guest-'] .column.main .block.block-order-details-view:after,
-  .sales-guest-view .column.main .block.block-order-details-view:before,
-  .sales-guest-view .column.main .block.block-order-details-view:after,
-  .page-header .header.panel:before,
-  .page-header .header.panel:after,
-  .header.content:before,
-  .header.content:after {
-    content: '';
-    display: table;
-  }
-  .abs-add-clearfix-desktop:after,
-  .amazon-addresses:after,
-  .paypal-review .block-content:after,
-  .paypal-review-discount:after,
-  .order-review-form:after,
-  .block-cart-failed .block-content:after,
-  .cart-container:after,
-  .login-container:after,
-  .account .page-title-wrapper:after,
-  .account .column.main .block:not(.widget) .block-content:after,
-  .block-addresses-list .items.addresses:after,
-  .block-giftregistry-shared .item-options:after,
-  .data.table .gift-wrapping .nested:after,
-  .data.table .gift-wrapping .content:after,
-  .block-wishlist-management:after,
-  .magento-rma-guest-returns .column.main .block.block-order-details-view:after,
-  .order-links:after,
-  .account .column.main .block.block-order-details-view:after,
-  [class^='sales-guest-'] .column.main .block.block-order-details-view:after,
-  .sales-guest-view .column.main .block.block-order-details-view:after,
-  .page-header .header.panel:after,
-  .header.content:after {
-    clear: both;
-  }
-  .abs-add-box-sizing-desktop,
-  .abs-shopping-cart-items-desktop,
-  .column.main,
-  .sidebar-main,
-  .sidebar-additional,
-  .bundle-options-container .block-bundle-summary,
-  .block.crosssell,
-  .magento-rma-guest-returns .column.main .block.block-order-details-view .block-content:not(.widget) .box,
-  .account .column.main .block.block-order-details-view .block-content:not(.widget) .box,
-  [class^='sales-guest-'] .column.main .block.block-order-details-view .block-content:not(.widget) .box,
-  .sales-guest-view .column.main .block.block-order-details-view .block-content:not(.widget) .box,
-  .block-cart-failed,
-  .cart-container .form-cart,
-  .cart-container .cart-gift-item {
-    box-sizing: border-box;
-  }
-  .abs-add-box-sizing-desktop-m,
-  .opc-wrapper {
-    box-sizing: border-box;
-  }
-  .abs-revert-field-type-desktop .fieldset > .field,
-  .abs-revert-field-type-desktop .fieldset .fields > .field {
-    margin: 0 0 20px;
-  }
-  .abs-revert-field-type-desktop .fieldset > .field:not(.choice) > .label,
-  .abs-revert-field-type-desktop .fieldset .fields > .field:not(.choice) > .label {
-    box-sizing: content-box;
-    float: none;
-    width: auto;
-    text-align: left;
-    padding: 0;
-  }
-  .abs-revert-field-type-desktop .fieldset > .field:not(.choice) > .control,
-  .abs-revert-field-type-desktop .fieldset .fields > .field:not(.choice) > .control {
-    float: none;
-    width: auto;
-  }
-  .abs-revert-field-type-desktop .fieldset > .field > .label,
-  .abs-revert-field-type-desktop .fieldset .fields > .field > .label {
-    margin: 0 0 8px;
-    display: inline-block;
-  }
-  .abs-revert-field-type-desktop .fieldset > .field.choice:before,
-  .abs-revert-field-type-desktop .fieldset .fields > .field.choice:before,
-  .abs-revert-field-type-desktop .fieldset > .field.no-label:before,
-  .abs-revert-field-type-desktop .fieldset .fields > .field.no-label:before {
-    display: none;
-  }
-  .abs-form-field-column-2 .fieldset .field,
-  .form-giftregistry-share .fieldset .field,
-  .form-giftregistry-edit .fieldset .field,
-  .form-create-return .fieldset .field,
-  .form.send.friend .fieldset .field {
-    padding: 0 12px 0 0;
-    box-sizing: border-box;
-    display: inline-block;
-    width: 50%;
-    vertical-align: top;
-  }
-  .abs-form-field-column-2 .fieldset .field + .fieldset,
-  .form-giftregistry-share .fieldset .field + .fieldset,
-  .form-giftregistry-edit .fieldset .field + .fieldset,
-  .form-create-return .fieldset .field + .fieldset,
-  .form.send.friend .fieldset .field + .fieldset {
-    clear: both;
-  }
-  .form-giftregistry-share .fieldset .field:nth-last-child(1),
-  .form-giftregistry-share .fieldset .field:nth-last-child(2),
-  .form-giftregistry-edit .fieldset .field:nth-last-child(1),
-  .form-giftregistry-edit .fieldset .field:nth-last-child(2),
-  .form-create-return .fieldset .field:nth-last-child(1),
-  .form-create-return .fieldset .field:nth-last-child(2),
-  .form.send.friend .fieldset .field:nth-last-child(1),
-  .form.send.friend .fieldset .field:nth-last-child(2) {
-    margin-bottom: 0;
-  }
-  .abs-form-field-column-2 .fieldset .field .field,
-  .form-giftregistry-share .fieldset .field .field,
-  .form-giftregistry-edit .fieldset .field .field,
-  .form-create-return .fieldset .field .field,
-  .form.send.friend .fieldset .field .field {
-    padding: 0;
-    width: 100%;
-  }
-  .abs-form-field-revert-column-1 {
-    width: 100%;
-  }
-  .abs-forms-general-desktop,
-  .form-giftcard-redeem,
-  .form-giftregistry-create {
-    max-width: 500px;
-  }
-  .abs-forms-general-desktop .legend,
-  .form-giftcard-redeem .legend,
-  .form-giftregistry-create .legend {
-    border: 0;
-    clip: rect(0, 0, 0, 0);
-    height: 1px;
-    margin: -1px;
-    overflow: hidden;
-    padding: 0;
-    position: absolute;
-    width: 1px;
-  }
-  .abs-forms-general-desktop .legend + br,
-  .form-giftcard-redeem .legend + br,
-  .form-giftregistry-create .legend + br {
-    display: none;
-  }
-  .abs-revert-side-paddings,
-  .checkout-cart-index .page-title-wrapper,
-  .cart-summary .block .content,
-  .cart-empty {
-    padding-left: 0;
-    padding-right: 0;
-  }
-  .abs-account-block-font-size,
-  .block-addresses-list address,
-  .box-billing-address .box-content,
-  .box-shipping-address .box-content,
-  .box-address-billing .box-content,
-  .box-address-shipping .box-content,
-  .box-information .box-content,
-  .block-balance-giftcard .block-content,
-  .block-reviews-dashboard .product-name {
-    font-size: 1.6rem;
-  }
-  .abs-account-table-margin-desktop,
-  .table-wrapper.balance-history,
-  .table-wrapper.reward-history,
-  .table-wrapper.orders-recent {
-    margin-top: -25px;
-  }
-  .abs-action-print {
-    display: inline-block;
-    text-decoration: none;
-  }
-  .abs-action-print:before {
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    font-size: 16px;
-    line-height: 16px;
-    color: inherit;
-    content: '\e624';
-    font-family: 'luma-icons';
-    margin: 0 4px 0 0;
-    vertical-align: middle;
-    display: inline-block;
-    font-weight: normal;
-    overflow: hidden;
-    speak: none;
-    text-align: center;
-  }
-  .abs-no-display-desktop,
-  .sidebar .block.widget .pager .item:not(.pages-item-next):not(.pages-item-previous) {
-    display: none;
-  }
-  .abs-status-desktop,
-  .return-status,
-  .order-status {
-    margin-top: 6px;
-    padding: 5px 10px;
-  }
-  .abs-title-orders-desktop .page-main .page-title-wrapper .order-date,
-  .magento-rma-returns-returns .page-main .page-title-wrapper .order-date,
-  .magento-rma-returns-view .page-main .page-title-wrapper .order-date,
-  .account .page-main .page-title-wrapper .order-date,
-  [class^='sales-guest-'] .page-main .page-title-wrapper .order-date,
-  .sales-guest-view .page-main .page-title-wrapper .order-date {
-    margin: -14px 0 18px;
-  }
-  .abs-table-bordered-desktop {
-    border: none;
-  }
-  .abs-table-bordered-desktop > thead > tr > th,
-  .abs-table-bordered-desktop > tbody > tr > th,
-  .abs-table-bordered-desktop > tfoot > tr > th,
-  .abs-table-bordered-desktop > thead > tr > td,
-  .abs-table-bordered-desktop > tbody > tr > td,
-  .abs-table-bordered-desktop > tfoot > tr > td {
-    border: none;
-  }
-  .abs-table-bordered-desktop > thead > tr > th,
-  .abs-table-bordered-desktop > thead > tr > td {
-    border-bottom: 1px solid #cccccc;
-  }
-  .abs-pager-toolbar,
-  .account .toolbar,
-  .toolbar-giftregistry-results,
-  .toolbar-wishlist-results {
-    position: relative;
-  }
-  .abs-pager-toolbar .toolbar-amount,
-  .abs-pager-toolbar .limiter,
-  .account .toolbar .toolbar-amount,
-  .account .toolbar .limiter,
-  .toolbar-giftregistry-results .toolbar-amount,
-  .toolbar-giftregistry-results .limiter,
-  .toolbar-wishlist-results .toolbar-amount,
-  .toolbar-wishlist-results .limiter {
-    position: relative;
-    z-index: 1;
-  }
-  .abs-pager-toolbar .limiter,
-  .account .toolbar .limiter,
-  .toolbar-giftregistry-results .limiter,
-  .toolbar-wishlist-results .limiter {
-    display: inline-block;
-    float: right;
-  }
-  .abs-pager-toolbar .toolbar-amount,
-  .account .toolbar .toolbar-amount,
-  .toolbar-giftregistry-results .toolbar-amount,
-  .toolbar-wishlist-results .toolbar-amount {
-    line-height: 30px;
-    padding: 0;
-  }
-  .abs-pager-toolbar .pages,
-  .account .toolbar .pages,
-  .toolbar-giftregistry-results .pages,
-  .toolbar-wishlist-results .pages {
-    position: absolute;
-    width: 100%;
-    z-index: 0;
-  }
-  .abs-shopping-cart-items-desktop,
-  .block-cart-failed,
-  .cart-container .form-cart,
-  .cart-container .cart-gift-item {
-    width: 75%;
-    float: left;
-    -ms-flex-order: 1;
-    -webkit-order: 1;
-    order: 1;
-    padding-right: 4%;
-    position: relative;
-  }
-  .abs-discount-block-desktop .block > .title,
-  .paypal-review-discount .block > .title,
-  .cart-discount .block > .title {
-    border: 0;
-    padding: 0 0 10px;
-  }
-  .abs-discount-block-desktop .block > .title strong,
-  .paypal-review-discount .block > .title strong,
-  .cart-discount .block > .title strong {
-    font-size: 1.6rem;
-  }
-  .abs-discount-block-desktop .block .content,
-  .paypal-review-discount .block .content,
-  .cart-discount .block .content {
-    padding: 0 0 20px;
-  }
-  .abs-discount-block-desktop .actions-toolbar .secondary,
-  .paypal-review-discount .actions-toolbar .secondary,
-  .cart-discount .actions-toolbar .secondary {
-    bottom: -30px;
-    left: 0;
-    position: absolute;
-  }
   h1 {
     font-size: 40px;
     margin-bottom: 40px;
@@ -1218,7 +783,7 @@ span.klarna-payments-method-cell > img {
   }
   .navigation .level0 > .level-top:hover,
   .navigation .level0 > .level-top.ui-state-focus {
-    color: #333333;
+    color: #333;
     text-decoration: none;
   }
   .navigation .level0.active > .level-top,
@@ -1226,7 +791,7 @@ span.klarna-payments-method-cell > img {
     border-color: #ff5501;
     border-style: solid;
     border-width: 0 0 3px;
-    color: #333333;
+    color: #333;
     text-decoration: none;
     display: inline-block;
   }
@@ -1268,8 +833,8 @@ span.klarna-payments-method-cell > img {
     text-align: center;
   }
   .navigation .level0 .submenu {
-    background: #ffffff;
-    border: 1px solid #cccccc;
+    background: #fff;
+    border: 1px solid #ccc;
     box-shadow: 0 5px 5px rgba(0, 0, 0, 0.19);
     font-weight: 400;
     min-width: 230px;
@@ -1292,21 +857,21 @@ span.klarna-payments-method-cell > img {
     position: absolute;
   }
   .navigation .level0 .submenu > ul:before {
-    color: #ffffff;
+    color: #fff;
     left: 20px;
     top: -20px;
     border: 10px solid transparent;
     height: 0;
     width: 0;
-    border-bottom-color: #ffffff;
+    border-bottom-color: #fff;
     z-index: 4;
   }
   .navigation .level0 .submenu > ul:after {
     border: 11px solid transparent;
     height: 0;
     width: 0;
-    border-bottom-color: #cccccc;
-    color: #cccccc;
+    border-bottom-color: #ccc;
+    color: #ccc;
     left: 19px;
     top: -22px;
     z-index: 3;
@@ -1330,14 +895,14 @@ span.klarna-payments-method-cell > img {
   .navigation .level0 .submenu a:hover,
   .navigation .level0 .submenu a.ui-state-focus {
     background: #e8e8e8;
-    color: #333333;
+    color: #333;
     text-decoration: none;
   }
   .navigation .level0 .submenu .active > a {
     border-color: #ff5501;
     border-style: solid;
     border-width: 0 0 0 3px;
-    color: #333333;
+    color: #333;
   }
   .navigation .level0 .submenu .submenu {
     top: 0 !important;
@@ -1476,7 +1041,7 @@ span.klarna-payments-method-cell > img {
     color: #6d6d6d;
     text-decoration: none;
     background: #f6f6f6;
-    border: 1px solid #cccccc;
+    border: 1px solid #ccc;
     border-bottom: none;
     height: 40px;
     padding: 1px 35px 1px 35px;
@@ -1490,7 +1055,7 @@ span.klarna-payments-method-cell > img {
     text-decoration: none;
   }
   .product.data.items > .item.title > .switch:active {
-    color: #333333;
+    color: #333;
     text-decoration: none;
   }
   .product.data.items > .item.title:not(.disabled) > .switch:focus,
@@ -1502,7 +1067,7 @@ span.klarna-payments-method-cell > img {
   .product.data.items > .item.title.active > .switch:focus,
   .product.data.items > .item.title.active > .switch:hover {
     background: #ffffff;
-    color: #333333;
+    color: #333;
     text-decoration: none;
   }
   .product.data.items > .item.title.active > .switch,
@@ -1514,7 +1079,7 @@ span.klarna-payments-method-cell > img {
     background: #ffffff;
     margin-top: 43px;
     padding: 35px 35px 35px 35px;
-    border: 1px solid #cccccc;
+    border: 1px solid #ccc;
   }
   .product.data.items .item.title a:after {
     display: none;
@@ -1567,6 +1132,455 @@ span.klarna-payments-method-cell > img {
     border-top: 1px solid #c1c1c1;
     text-align: right;
   }
+  .abs-product-options-list-desktop dt,
+  .block-giftregistry-shared .item-options dt {
+    clear: left;
+    float: left;
+    margin: 0 10px 5px 0;
+  }
+  .abs-product-options-list-desktop dt:after,
+  .block-giftregistry-shared .item-options dt:after {
+    content: ': ';
+  }
+  .abs-product-options-list-desktop dd,
+  .block-giftregistry-shared .item-options dd {
+    display: inline-block;
+    float: left;
+    margin: 0 0 5px;
+  }
+  .abs-button-desktop {
+    width: auto;
+  }
+  .abs-blocks-2columns,
+  .abs-discount-block-desktop .block,
+  .amazon-addresses .amazon-address,
+  .login-container .block,
+  .account .column.main .block:not(.widget) .block-content .box,
+  .form-address-edit > .fieldset,
+  .form-edit-account .fieldset,
+  .storecredit .block,
+  .paypal-review-discount .block,
+  .cart-discount .block {
+    width: 48%;
+  }
+  .abs-blocks-2columns:nth-child(1),
+  .abs-discount-block-desktop .block:nth-child(1),
+  .amazon-addresses .amazon-address:nth-child(1),
+  .login-container .block:nth-child(1),
+  .account .column.main .block:not(.widget) .block-content .box:nth-child(1),
+  .form-address-edit > .fieldset:nth-child(1),
+  .form-edit-account .fieldset:nth-child(1),
+  .storecredit .block:nth-child(1),
+  .paypal-review-discount .block:nth-child(1),
+  .cart-discount .block:nth-child(1) {
+    clear: left;
+    float: left;
+  }
+  .abs-blocks-2columns:nth-child(2),
+  .abs-discount-block-desktop .block:nth-child(2),
+  .amazon-addresses .amazon-address:nth-child(2),
+  .login-container .block:nth-child(2),
+  .account .column.main .block:not(.widget) .block-content .box:nth-child(2),
+  .form-address-edit > .fieldset:nth-child(2),
+  .form-edit-account .fieldset:nth-child(2),
+  .storecredit .block:nth-child(2),
+  .paypal-review-discount .block:nth-child(2),
+  .cart-discount .block:nth-child(2) {
+    float: right;
+  }
+  .abs-blocks-2columns:nth-child(2) + *,
+  .abs-discount-block-desktop .block:nth-child(2) + *,
+  .amazon-addresses .amazon-address:nth-child(2) + *,
+  .login-container .block:nth-child(2) + *,
+  .account .column.main .block:not(.widget) .block-content .box:nth-child(2) + *,
+  .form-address-edit > .fieldset:nth-child(2) + *,
+  .form-edit-account .fieldset:nth-child(2) + *,
+  .storecredit .block:nth-child(2) + *,
+  .paypal-review-discount .block:nth-child(2) + *,
+  .cart-discount .block:nth-child(2) + * {
+    clear: both;
+  }
+  .abs-margin-for-blocks-and-widgets-desktop,
+  .page-main .block,
+  .customer-review .product-details {
+    margin-bottom: 50px;
+  }
+  .abs-reset-left-margin-desktop,
+  .column.main .paypal-review .actions-toolbar,
+  .column.main .block-giftregistry-shared-items .actions-toolbar {
+    margin-left: 0;
+  }
+  .abs-action-remove-desktop,
+  .abs-add-fields-desktop .fieldset .additional .action.remove,
+  .form-giftregistry-share .fieldset .additional .action.remove,
+  .form-giftregistry-edit .fieldset .additional .action.remove,
+  .form-create-return .fieldset .additional .action.remove,
+  .form.send.friend .fieldset .additional .action.remove {
+    margin-left: 90%;
+  }
+  .abs-add-fields-desktop .fieldset .field .control,
+  .form-giftregistry-share .fieldset .field .control,
+  .form-giftregistry-edit .fieldset .field .control,
+  .form-create-return .fieldset .field .control,
+  .form.send.friend .fieldset .field .control {
+    width: auto;
+  }
+  .abs-margin-for-forms-desktop {
+    margin-left: 25.8%;
+  }
+  .abs-visually-hidden-desktop,
+  .modes-label,
+  .block-search .label,
+  .block-collapsible-nav .title {
+    border: 0;
+    clip: rect(0, 0, 0, 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+  }
+  .abs-add-clearfix-desktop:before,
+  .abs-add-clearfix-desktop:after,
+  .amazon-addresses:before,
+  .amazon-addresses:after,
+  .paypal-review .block-content:before,
+  .paypal-review .block-content:after,
+  .paypal-review-discount:before,
+  .paypal-review-discount:after,
+  .order-review-form:before,
+  .order-review-form:after,
+  .block-cart-failed .block-content:before,
+  .block-cart-failed .block-content:after,
+  .cart-container:before,
+  .cart-container:after,
+  .login-container:before,
+  .login-container:after,
+  .account .page-title-wrapper:before,
+  .account .page-title-wrapper:after,
+  .account .column.main .block:not(.widget) .block-content:before,
+  .account .column.main .block:not(.widget) .block-content:after,
+  .block-addresses-list .items.addresses:before,
+  .block-addresses-list .items.addresses:after,
+  .block-giftregistry-shared .item-options:before,
+  .block-giftregistry-shared .item-options:after,
+  .data.table .gift-wrapping .nested:before,
+  .data.table .gift-wrapping .nested:after,
+  .data.table .gift-wrapping .content:before,
+  .data.table .gift-wrapping .content:after,
+  .block-wishlist-management:before,
+  .block-wishlist-management:after,
+  .magento-rma-guest-returns .column.main .block.block-order-details-view:before,
+  .magento-rma-guest-returns .column.main .block.block-order-details-view:after,
+  .order-links:before,
+  .order-links:after,
+  .account .column.main .block.block-order-details-view:before,
+  .account .column.main .block.block-order-details-view:after,
+  [class^='sales-guest-'] .column.main .block.block-order-details-view:before,
+  [class^='sales-guest-'] .column.main .block.block-order-details-view:after,
+  .sales-guest-view .column.main .block.block-order-details-view:before,
+  .sales-guest-view .column.main .block.block-order-details-view:after,
+  .page-header .header.panel:before,
+  .page-header .header.panel:after,
+  .header.content:before,
+  .header.content:after {
+    content: '';
+    display: table;
+  }
+  .abs-add-clearfix-desktop:after,
+  .amazon-addresses:after,
+  .paypal-review .block-content:after,
+  .paypal-review-discount:after,
+  .order-review-form:after,
+  .block-cart-failed .block-content:after,
+  .cart-container:after,
+  .login-container:after,
+  .account .page-title-wrapper:after,
+  .account .column.main .block:not(.widget) .block-content:after,
+  .block-addresses-list .items.addresses:after,
+  .block-giftregistry-shared .item-options:after,
+  .data.table .gift-wrapping .nested:after,
+  .data.table .gift-wrapping .content:after,
+  .block-wishlist-management:after,
+  .magento-rma-guest-returns .column.main .block.block-order-details-view:after,
+  .order-links:after,
+  .account .column.main .block.block-order-details-view:after,
+  [class^='sales-guest-'] .column.main .block.block-order-details-view:after,
+  .sales-guest-view .column.main .block.block-order-details-view:after,
+  .page-header .header.panel:after,
+  .header.content:after {
+    clear: both;
+  }
+  .abs-add-box-sizing-desktop,
+  .column.main,
+  .sidebar-main,
+  .sidebar-additional,
+  .abs-shopping-cart-items-desktop,
+  .bundle-options-container .block-bundle-summary,
+  .block.crosssell,
+  .magento-rma-guest-returns .column.main .block.block-order-details-view .block-content:not(.widget) .box,
+  .account .column.main .block.block-order-details-view .block-content:not(.widget) .box,
+  [class^='sales-guest-'] .column.main .block.block-order-details-view .block-content:not(.widget) .box,
+  .sales-guest-view .column.main .block.block-order-details-view .block-content:not(.widget) .box,
+  .block-cart-failed,
+  .cart-container .form-cart,
+  .cart-container .cart-gift-item {
+    box-sizing: border-box;
+  }
+  .abs-add-box-sizing-desktop-m,
+  .opc-wrapper {
+    box-sizing: border-box;
+  }
+  .abs-revert-field-type-desktop .fieldset > .field,
+  .abs-revert-field-type-desktop .fieldset .fields > .field {
+    margin: 0 0 20px;
+  }
+  .abs-revert-field-type-desktop .fieldset > .field:not(.choice) > .label,
+  .abs-revert-field-type-desktop .fieldset .fields > .field:not(.choice) > .label {
+    box-sizing: content-box;
+    float: none;
+    width: auto;
+    text-align: left;
+    padding: 0;
+  }
+  .abs-revert-field-type-desktop .fieldset > .field:not(.choice) > .control,
+  .abs-revert-field-type-desktop .fieldset .fields > .field:not(.choice) > .control {
+    float: none;
+    width: auto;
+  }
+  .abs-revert-field-type-desktop .fieldset > .field > .label,
+  .abs-revert-field-type-desktop .fieldset .fields > .field > .label {
+    margin: 0 0 8px;
+    display: inline-block;
+  }
+  .abs-revert-field-type-desktop .fieldset > .field.choice:before,
+  .abs-revert-field-type-desktop .fieldset .fields > .field.choice:before,
+  .abs-revert-field-type-desktop .fieldset > .field.no-label:before,
+  .abs-revert-field-type-desktop .fieldset .fields > .field.no-label:before {
+    display: none;
+  }
+  .abs-revert-field-type-desktop .fieldset > .field:not(:first-child):last-of-type,
+  .abs-revert-field-type-desktop .fieldset .fields > .field:not(:first-child):last-of-type {
+    margin-bottom: 0;
+  }
+  .abs-form-field-column-2 .fieldset .field,
+  .form-giftregistry-share .fieldset .field,
+  .form-giftregistry-edit .fieldset .field,
+  .form-create-return .fieldset .field,
+  .form.send.friend .fieldset .field {
+    padding: 0 12px 0 0;
+    box-sizing: border-box;
+    display: inline-block;
+    width: 50%;
+    vertical-align: top;
+  }
+  .abs-form-field-column-2 .fieldset .field + .fieldset,
+  .form-giftregistry-share .fieldset .field + .fieldset,
+  .form-giftregistry-edit .fieldset .field + .fieldset,
+  .form-create-return .fieldset .field + .fieldset,
+  .form.send.friend .fieldset .field + .fieldset {
+    clear: both;
+  }
+  .abs-form-field-column-2 .fieldset .field:nth-last-child(1),
+  .abs-form-field-column-2 .fieldset .field:nth-last-child(2),
+  .form-giftregistry-share .fieldset .field:nth-last-child(1),
+  .form-giftregistry-share .fieldset .field:nth-last-child(2),
+  .form-giftregistry-edit .fieldset .field:nth-last-child(1),
+  .form-giftregistry-edit .fieldset .field:nth-last-child(2),
+  .form-create-return .fieldset .field:nth-last-child(1),
+  .form-create-return .fieldset .field:nth-last-child(2),
+  .form.send.friend .fieldset .field:nth-last-child(1),
+  .form.send.friend .fieldset .field:nth-last-child(2) {
+    margin-bottom: 0;
+  }
+  .abs-form-field-column-2 .fieldset .field .field,
+  .form-giftregistry-share .fieldset .field .field,
+  .form-giftregistry-edit .fieldset .field .field,
+  .form-create-return .fieldset .field .field,
+  .form.send.friend .fieldset .field .field {
+    padding: 0;
+    width: 100%;
+  }
+  .abs-form-field-revert-column-1 {
+    width: 100%;
+  }
+  .abs-forms-general-desktop,
+  .form-giftcard-redeem,
+  .form-giftregistry-create {
+    max-width: 500px;
+  }
+  .abs-forms-general-desktop .legend,
+  .form-giftcard-redeem .legend,
+  .form-giftregistry-create .legend {
+    border: 0;
+    clip: rect(0, 0, 0, 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+  }
+  .abs-forms-general-desktop .legend + br,
+  .form-giftcard-redeem .legend + br,
+  .form-giftregistry-create .legend + br {
+    display: none;
+  }
+  .abs-revert-side-paddings,
+  .checkout-cart-index .page-title-wrapper,
+  .cart-summary .block .content,
+  .cart-empty {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .abs-account-block-font-size,
+  .block-addresses-list address,
+  .box-billing-address .box-content,
+  .box-shipping-address .box-content,
+  .box-address-billing .box-content,
+  .box-address-shipping .box-content,
+  .box-information .box-content,
+  .block-balance-giftcard .block-content,
+  .block-reviews-dashboard .product-name {
+    font-size: 1.6rem;
+  }
+  .abs-account-table-margin-desktop,
+  .table-wrapper.balance-history,
+  .table-wrapper.reward-history,
+  .table-wrapper.orders-recent {
+    margin-top: -25px;
+  }
+  .abs-action-print {
+    display: inline-block;
+    text-decoration: none;
+  }
+  .abs-action-print:before {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-size: 16px;
+    line-height: 16px;
+    color: inherit;
+    content: '\e624';
+    font-family: 'luma-icons';
+    margin: 0 4px 0 0;
+    vertical-align: middle;
+    display: inline-block;
+    font-weight: normal;
+    overflow: hidden;
+    speak: none;
+    text-align: center;
+  }
+  .abs-action-print:hover {
+    text-decoration: underline;
+  }
+  .abs-no-display-desktop,
+  .sidebar .block.widget .pager .item:not(.pages-item-next):not(.pages-item-previous) {
+    display: none;
+  }
+  .abs-status-desktop,
+  .return-status,
+  .order-status {
+    margin-top: 6px;
+    padding: 5px 10px;
+  }
+  .abs-title-orders-desktop .page-main .page-title-wrapper .order-date,
+  .magento-rma-returns-returns .page-main .page-title-wrapper .order-date,
+  .magento-rma-returns-view .page-main .page-title-wrapper .order-date,
+  .account .page-main .page-title-wrapper .order-date,
+  [class^='sales-guest-'] .page-main .page-title-wrapper .order-date,
+  .sales-guest-view .page-main .page-title-wrapper .order-date {
+    margin: -14px 0 18px;
+  }
+  .abs-table-bordered-desktop {
+    border: none;
+  }
+  .abs-table-bordered-desktop > thead > tr > th,
+  .abs-table-bordered-desktop > tbody > tr > th,
+  .abs-table-bordered-desktop > tfoot > tr > th,
+  .abs-table-bordered-desktop > thead > tr > td,
+  .abs-table-bordered-desktop > tbody > tr > td,
+  .abs-table-bordered-desktop > tfoot > tr > td {
+    border: none;
+  }
+  .abs-table-bordered-desktop > thead > tr > th,
+  .abs-table-bordered-desktop > thead > tr > td {
+    border-bottom: 1px solid #ccc;
+  }
+  .abs-pager-toolbar,
+  .account .toolbar,
+  .toolbar-giftregistry-results,
+  .toolbar-wishlist-results {
+    position: relative;
+  }
+  .abs-pager-toolbar .toolbar-amount,
+  .abs-pager-toolbar .limiter,
+  .account .toolbar .toolbar-amount,
+  .account .toolbar .limiter,
+  .toolbar-giftregistry-results .toolbar-amount,
+  .toolbar-giftregistry-results .limiter,
+  .toolbar-wishlist-results .toolbar-amount,
+  .toolbar-wishlist-results .limiter {
+    position: relative;
+    z-index: 1;
+  }
+  .abs-pager-toolbar .limiter,
+  .account .toolbar .limiter,
+  .toolbar-giftregistry-results .limiter,
+  .toolbar-wishlist-results .limiter {
+    display: inline-block;
+    float: right;
+  }
+  .abs-pager-toolbar .toolbar-amount,
+  .account .toolbar .toolbar-amount,
+  .toolbar-giftregistry-results .toolbar-amount,
+  .toolbar-wishlist-results .toolbar-amount {
+    line-height: 30px;
+    padding: 0;
+  }
+  .abs-pager-toolbar .pages,
+  .account .toolbar .pages,
+  .toolbar-giftregistry-results .pages,
+  .toolbar-wishlist-results .pages {
+    position: absolute;
+    width: 100%;
+    z-index: 0;
+  }
+  .abs-shopping-cart-items-desktop,
+  .block-cart-failed,
+  .cart-container .form-cart,
+  .cart-container .cart-gift-item {
+    width: 75%;
+    float: left;
+    -ms-flex-order: 1;
+    -webkit-order: 1;
+    order: 1;
+    padding-right: 4%;
+    position: relative;
+  }
+  .abs-discount-block-desktop .block > .title,
+  .paypal-review-discount .block > .title,
+  .cart-discount .block > .title {
+    border: 0;
+    padding: 0 0 10px;
+  }
+  .abs-discount-block-desktop .block > .title strong,
+  .paypal-review-discount .block > .title strong,
+  .cart-discount .block > .title strong {
+    font-size: 1.6rem;
+  }
+  .abs-discount-block-desktop .block .content,
+  .paypal-review-discount .block .content,
+  .cart-discount .block .content {
+    padding: 0 0 20px;
+  }
+  .abs-discount-block-desktop .actions-toolbar .secondary,
+  .paypal-review-discount .actions-toolbar .secondary,
+  .cart-discount .actions-toolbar .secondary {
+    bottom: -30px;
+    left: 0;
+    position: absolute;
+  }
   .login-container .block-amazon-login {
     clear: none;
     float: right;
@@ -1603,7 +1617,7 @@ span.klarna-payments-method-cell > img {
     left: 6rem;
   }
   .braintree-paypal-account {
-    border-color: #cccccc;
+    border-color: #ccc;
     border-style: solid;
     border-width: 1px 0;
     display: inline-block;
@@ -1647,7 +1661,7 @@ span.klarna-payments-method-cell > img {
     min-width: 600px;
   }
   .paypal-review .paypal-review-title {
-    border-bottom: 1px solid #cccccc;
+    border-bottom: 1px solid #ccc;
   }
   .paypal-review .block-content .box-order-shipping-address,
   .paypal-review .block-content .box-order-shipping-method,
@@ -1673,7 +1687,7 @@ span.klarna-payments-method-cell > img {
     text-align: right;
   }
   .paypal-review-discount {
-    border-top: 1px solid #cccccc;
+    border-top: 1px solid #ccc;
   }
   .paypal-review-discount .block {
     margin-bottom: 15px;
@@ -1791,7 +1805,7 @@ span.klarna-payments-method-cell > img {
     background-color: #f0f0f0;
     box-shadow: inset 0 1px 0 0 #ffffff, inset 0 -1px 0 0 rgba(204, 204, 204, 0.3);
     color: #5e5e5e;
-    border: 1px solid #cccccc;
+    border: 1px solid #ccc;
     border-right: 0;
     float: left;
     font-weight: 400;
@@ -1810,7 +1824,7 @@ span.klarna-payments-method-cell > img {
   }
   .modes-mode:last-child {
     border-radius: 0 3px 3px 0;
-    border-right: 1px solid #cccccc;
+    border-right: 1px solid #ccc;
   }
   .modes-mode.active {
     box-shadow: inset 0 1px 0 0 rgba(204, 204, 204, 0.8), inset 0 -1px 0 0 rgba(204, 204, 204, 0.3);
@@ -1933,19 +1947,19 @@ span.klarna-payments-method-cell > img {
   }
   .compare.wrapper .action.compare {
     line-height: 32px;
-    color: #333333;
+    color: #333;
     text-decoration: none;
   }
   .compare.wrapper .action.compare:visited {
-    color: #333333;
+    color: #333;
     text-decoration: none;
   }
   .compare.wrapper .action.compare:hover {
-    color: #333333;
+    color: #333;
     text-decoration: underline;
   }
   .compare.wrapper .action.compare:active {
-    color: #333333;
+    color: #333;
     text-decoration: underline;
   }
   .compare.wrapper .counter.qty {
@@ -2031,7 +2045,7 @@ span.klarna-payments-method-cell > img {
     text-align: center;
   }
   .block-search .action.search:hover:before {
-    color: #333333;
+    color: #333;
   }
   .block-search .action.search:active:before {
     color: inherit;
@@ -2052,7 +2066,7 @@ span.klarna-payments-method-cell > img {
     opacity: 0.5;
   }
   .block-search .action.search:focus:before {
-    color: #333333;
+    color: #333;
   }
   .search-autocomplete {
     margin-top: 0;
@@ -2240,7 +2254,7 @@ span.klarna-payments-method-cell > img {
   }
   .opc-progress-bar-item:before {
     background: #e4e4e4;
-    border: 1px solid #cccccc;
+    border: 1px solid #ccc;
     top: 19px;
     transition: background 0.3s;
     content: '';
@@ -2260,14 +2274,14 @@ span.klarna-payments-method-cell > img {
     padding-top: 45px;
     width: 100%;
     word-wrap: break-word;
-    color: #666666;
+    color: #666;
     font-weight: 300;
     font-size: 1.8rem;
   }
   .opc-progress-bar-item > span:before,
   .opc-progress-bar-item > span:after {
     background: #e4e4e4;
-    border: 1px solid #cccccc;
+    border: 1px solid #ccc;
     height: 38px;
     margin-left: -19px;
     transition: background 0.3s;
@@ -2279,14 +2293,14 @@ span.klarna-payments-method-cell > img {
     top: 0;
   }
   .opc-progress-bar-item > span:after {
-    background: #ffffff;
+    background: #fff;
     height: 26px;
     margin-left: -13px;
     top: 6px;
     width: 26px;
     content: counter(i);
     counter-increment: i;
-    color: #333333;
+    color: #333;
     font-weight: 600;
     font-size: 1.8rem;
   }
@@ -2311,7 +2325,7 @@ span.klarna-payments-method-cell > img {
     border-color: #ff5501;
   }
   .opc-progress-bar-item._active > span {
-    color: #333333;
+    color: #333;
     font-weight: 600;
   }
   .opc-progress-bar-item._active > span:before {
@@ -2341,7 +2355,7 @@ span.klarna-payments-method-cell > img {
     max-width: 500px;
   }
   .opc-wrapper .form-login {
-    border-bottom: 1px solid #cccccc;
+    border-bottom: 1px solid #ccc;
     padding-bottom: 20px;
   }
   .table-checkout-shipping-method {
@@ -2359,7 +2373,7 @@ span.klarna-payments-method-cell > img {
     display: none;
   }
   .authentication-dropdown {
-    background-color: #ffffff;
+    background-color: #fff;
     border: 1px solid #aeaeae;
     -webkit-transform: scale(1, 0);
     -webkit-transform-origin: 0 0;
@@ -2646,14 +2660,14 @@ span.klarna-payments-method-cell > img {
   }
   .page-product-giftcard .product-add-form .field:not(.text) .addon .addbefore,
   .page-product-giftcard .product-add-form .field:not(.text) .addon .addafter {
-    background: #ffffff;
+    background: #fff;
     background-clip: padding-box;
     border: 1px solid #c2c2c2;
     border-radius: 1px;
     font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     font-size: 14px;
     height: 32px;
-    line-height: 1.42857143;
+    line-height: 1.428571429;
     padding: 0 9px;
     vertical-align: baseline;
     width: 100%;
@@ -2812,7 +2826,7 @@ span.klarna-payments-method-cell > img {
   .account .data.table.table-giftregistry-items > thead > tr > td,
   .account .data.table.table-giftregistry-items > tbody > tr > td,
   .account .data.table.table-giftregistry-items > tfoot > tr > td {
-    border-top: 1px solid #cccccc;
+    border-top: 1px solid #ccc;
   }
   .account .data.table.table-giftregistry-items > caption + thead > tr:first-child > th,
   .account .data.table.table-giftregistry-items > colgroup + thead > tr:first-child > th,
@@ -2823,7 +2837,7 @@ span.klarna-payments-method-cell > img {
     border-top: 0;
   }
   .account .data.table.table-giftregistry-items > tbody + tbody {
-    border-top: 1px solid #cccccc;
+    border-top: 1px solid #ccc;
   }
   .account .data.table.table-giftregistry-items th {
     border-bottom: 0;
@@ -2852,7 +2866,7 @@ span.klarna-payments-method-cell > img {
     padding: 0;
   }
   .block-giftregistry-shared-items .item {
-    border-bottom: 1px solid #cccccc;
+    border-bottom: 1px solid #ccc;
     border-top: 0;
   }
   .block-giftregistry-shared-items .product-item-photo {
@@ -2959,7 +2973,7 @@ span.klarna-payments-method-cell > img {
     z-index: 1;
   }
   .page-layout-1column .filter.block {
-    border-top: 1px solid #cccccc;
+    border-top: 1px solid #ccc;
   }
   .page-layout-1column .filter-content {
     margin-top: 10px;
@@ -2987,7 +3001,7 @@ span.klarna-payments-method-cell > img {
     border: 8px solid transparent;
     height: 0;
     width: 0;
-    border-bottom-color: #000000;
+    border-bottom-color: #000;
     bottom: -1px;
     content: '';
     display: block;
@@ -2996,7 +3010,7 @@ span.klarna-payments-method-cell > img {
     z-index: 3;
   }
   .page-layout-1column .filter-options-item.active:after {
-    border-bottom-color: #ffffff;
+    border-bottom-color: #fff;
     margin-top: 2px;
     z-index: 4;
   }
@@ -3009,12 +3023,12 @@ span.klarna-payments-method-cell > img {
     z-index: 3;
   }
   .page-layout-1column .filter-options-content {
-    background: #ffffff;
+    background: #fff;
     -webkit-box-shadow: 0 3px 5px 0 rgba(50, 50, 50, 0.75);
     -moz-box-shadow: 0 3px 5px 0 rgba(50, 50, 50, 0.75);
     -ms-box-shadow: 0 3px 5px 0 rgba(50, 50, 50, 0.75);
     box-shadow: 0 3px 5px 0 rgba(50, 50, 50, 0.75);
-    border: 1px solid #cccccc;
+    border: 1px solid #ccc;
     padding: 5px 0;
     position: absolute;
     top: 100%;
@@ -3376,8 +3390,8 @@ span.klarna-payments-method-cell > img {
     margin: 0;
     padding: 0;
     list-style: none none;
-    background: #ffffff;
-    border: 1px solid #bbbbbb;
+    background: #fff;
+    border: 1px solid #bbb;
     margin-top: 4px;
     min-width: 100%;
     z-index: 101;
@@ -3407,12 +3421,12 @@ span.klarna-payments-method-cell > img {
   }
   .customer-welcome ul:before {
     border: 6px solid;
-    border-color: transparent transparent #ffffff transparent;
+    border-color: transparent transparent #fff transparent;
     z-index: 99;
   }
   .customer-welcome ul:after {
     border: 7px solid;
-    border-color: transparent transparent #bbbbbb transparent;
+    border-color: transparent transparent #bbb transparent;
     z-index: 98;
   }
   .customer-welcome ul:before {
@@ -3430,22 +3444,22 @@ span.klarna-payments-method-cell > img {
     display: block;
   }
   .customer-welcome li a {
-    color: #333333;
+    color: #333;
     text-decoration: none;
     display: block;
     line-height: 1.4;
     padding: 8px;
   }
   .customer-welcome li a:visited {
-    color: #333333;
+    color: #333;
     text-decoration: none;
   }
   .customer-welcome li a:hover {
-    color: #333333;
+    color: #333;
     text-decoration: none;
   }
   .customer-welcome li a:active {
-    color: #333333;
+    color: #333;
     text-decoration: none;
   }
   .customer-welcome .customer-name {
@@ -3466,7 +3480,7 @@ span.klarna-payments-method-cell > img {
     text-decoration: none;
     text-shadow: none;
     font-weight: 400;
-    color: #ffffff;
+    color: #fff;
   }
   .customer-welcome .action.switch:focus,
   .customer-welcome .action.switch:active {
@@ -3516,7 +3530,7 @@ span.klarna-payments-method-cell > img {
     line-height: 1.4;
   }
   .header.panel > .header.links > li.welcome a {
-    color: #ffffff;
+    color: #fff;
     padding-left: 5px;
   }
   .header.panel > .header.links > .authorization-link:after {
@@ -3569,10 +3583,10 @@ span.klarna-payments-method-cell > img {
     top: auto;
   }
   .page-footer .switcher .options ul.dropdown:before {
-    border-color: transparent #ffffff transparent transparent;
+    border-color: transparent #fff transparent transparent;
   }
   .page-footer .switcher .options ul.dropdown:after {
-    border-color: transparent #bbbbbb transparent transparent;
+    border-color: transparent #bbb transparent transparent;
     margin: 0 0 -1px -1px;
   }
   .footer.content {
@@ -3645,8 +3659,8 @@ span.klarna-payments-method-cell > img {
     width: auto;
   }
   .wishlist-index-index .product-item-inner {
-    background: #ffffff;
-    border: 1px solid #bbbbbb;
+    background: #fff;
+    border: 1px solid #bbb;
     box-shadow: 3px 4px 4px 0 rgba(0, 0, 0, 0.3);
     border-top: none;
     left: 0;
@@ -3770,6 +3784,13 @@ span.klarna-payments-method-cell > img {
   .block-search .action.search[disabled] {
     pointer-events: none;
     opacity: 1;
+  }
+  .block-search .form .minisearch {
+    margin-right: 30px;
+  }
+  .block-search {
+    padding-right: 42px;
+    padding-left: 0;
   }
   .page-footer {
     background: #47A6E0;
@@ -4043,11 +4064,15 @@ span.klarna-payments-method-cell > img {
     margin: auto;
     width: 38%;
   }
+  .block-bestseller-products .block-content .product-item-details .product-item-name {
+    width: fit-content !important;
+  }
   .block-search .action.search:before {
     font-size: 24px;
     line-height: 22px;
     color: #ffffff;
     padding: 8px 0;
+    margin-right: 30px;
   }
   .logo img {
     width: 322px;
@@ -4172,54 +4197,6 @@ span.klarna-payments-method-cell > img {
   .page-products .products-grid .product-item {
     margin-left: 0;
   }
-  .columns .catalog-category-product-recently {
-    position: relative;
-  }
-  .columns .catalog-category-product-recently .catalog-category-product-recently-block {
-    margin-top: 58px;
-    margin-bottom: 24px;
-    display: flex;
-  }
-  .columns .catalog-category-product-recently .catalog-category-product-recently-block h2.title {
-    color: #000000;
-    font-family: 'Montserrat';
-    font-size: 24px;
-    font-weight: 700;
-    letter-spacing: 0;
-    line-height: 24px;
-    text-transform: uppercase;
-    margin: 0;
-    box-sizing: border-box;
-    border: 4px solid #F9E102;
-    background-color: #FFFFFF;
-    text-align: center;
-    padding: 16px 21px;
-  }
-  .columns .catalog-category-product-recently .catalog-category-product-recently-block::before,
-  .columns .catalog-category-product-recently .catalog-category-product-recently-block::after {
-    content: '';
-    border-top: 4px solid #F9E102;
-    margin: auto;
-    width: 38%;
-  }
-  .columns .catalog-category-product-recently .catalog-category-product-recently__item .widget-product-grid.product-items {
-    max-width: 100%;
-  }
-  .columns .catalog-category-product-recently .catalog-category-product-recently__item .widget-product-grid.product-items .slick-list {
-    max-width: 1057px;
-    width: 100%;
-    margin: 0 auto;
-  }
-  .columns .catalog-category-product-recently .catalog-category-product-recently__item .widget-product-grid.product-items .slick-next {
-    position: absolute;
-    /* left: -39px; */
-    right: 15px;
-  }
-  .columns .catalog-category-product-recently .catalog-category-product-recently__item .widget-product-grid.product-items .slick-prev {
-    position: absolute;
-    /* left: -39px; */
-    left: 15px;
-  }
   .navigation .level0.parent > .level-top > .ui-menu-icon:after {
     content: '';
   }
@@ -4237,38 +4214,56 @@ span.klarna-payments-method-cell > img {
   .new-category-banner .product-item__banner .product-item-info .product-item-details [data-role="priceBox"] {
     font-size: 1.4rem !important;
   }
-  .products-banner .product-items {
-    display: flex !important;
+  .product-item-promotion {
+    box-sizing: border-box;
   }
-  .products-banner .product-items .product-item__banner {
-    width: calc(32%);
-    padding: 5px;
+  .product-item-promotion img {
+    transition: all 2s ease-out;
+    overflow: hidden;
   }
-  .products-banner .product-items .product-item__banner .product-item-info .product-item-details [data-role="priceBox"] {
-    font-size: 1.4rem !important;
-    padding: 10px 0;
+  .product-item-promotion img:hover {
+    transform: scale(1.1);
   }
-  .products-banner .product-items .product-item__banner .product-reviews-summary {
-    padding-top: 13px;
-  }
-  .products-banner .product-items .product-reviews-summary {
-    margin: 0 80px;
+  .block-bestseller-products .block-title {
+    margin: 60px auto;
     width: fit-content;
+    position: relative;
   }
-  .products-banner .product-items .product-item-name {
-    margin: 0px 66px !important;
+  .block-bestseller-products .block-title strong {
+    color: #000000;
+    font-family: 'Montserrat';
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: 0;
+    line-height: 24px;
+    text-transform: uppercase;
+    margin: 0;
+    box-sizing: border-box;
+    border: 4px solid #F9E102;
+    background-color: #FFFFFF;
+    text-align: center;
+    padding: 16px 21px;
   }
-  .products-banner .product-items [data-role="priceBox"] {
-    margin: 15px 72px !important ;
+  .block-bestseller-products .block-title::after {
+    content: '';
+    border-top: 4px solid #F9E102;
+    margin: auto;
+    width: 123%;
+    position: absolute;
+    right: -123%;
+    top: 40%;
   }
-  .products-banner .product-items .swatch-attribute-options {
-    margin: 0 90px !important;
+  .block-bestseller-products .block-title::before {
+    content: '';
+    border-top: 4px solid #F9E102;
+    margin: auto;
+    width: 123%;
+    position: absolute;
+    left: -123%;
+    top: 40%;
   }
-  .products-banner .product-items .product-item-actions {
-    margin: 0 40px !important;
-  }
-  .products-banner .product-items .product-item-info .product-item-view {
-    margin: 0 80px !important;
+  .block-bestseller-products .load-more-product {
+    margin: 28px 44.5%;
   }
 }
 @media all and (min-width: 1024px), print {
@@ -4321,7 +4316,7 @@ span.klarna-payments-method-cell > img {
     width: 33.33333333%;
   }
   .opc-wrapper .shipping-address-item:before {
-    background: #cccccc;
+    background: #ccc;
     height: calc(100% - 20px);
     content: '';
     left: 0;
@@ -4409,12 +4404,6 @@ span.klarna-payments-method-cell > img {
   }
   .page-products .products-grid .product-item:nth-child(3n -1) {
     margin: 0 19px;
-  }
-  .products-banner .product-items {
-    max-width: initial !important;
-  }
-  .products-banner .product-items .product-item:nth-child(3n-1) {
-    margin: 0 14px !important;
   }
 }
 @media all and (min-width: 1440px), print {
@@ -4517,10 +4506,9 @@ span.klarna-payments-method-cell > img {
 .slick-arrow.slick-hidden {
   display: none;
 }
-@charset "UTF-8";
 /* Slider */
 .slick-loading .slick-list {
-  background: #ffffff url('../image/ajax-loader.gif') center center no-repeat;
+  background: #fff url('../image/ajax-loader.gif') center center no-repeat;
 }
 /* Arrows */
 .slick-prev,
@@ -4565,10 +4553,18 @@ span.klarna-payments-method-cell > img {
   font-family: "slick";
   font-size: 20px;
   line-height: 1;
-  color: #ffffff;
+  color: white;
   opacity: 0.75;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  /* Icons */
+}
+@font-face {
+  font-family: 'slick';
+  font-weight: normal;
+  font-style: normal;
+  src: url('../fonts/slick/slick.eot');
+  src: url('../fonts/slick/slick.eot?#iefix') format('embedded-opentype'), url('../fonts/slick/slick.woff') format('woff'), url('../fonts/slick/slick.ttf') format('truetype'), url('../fonts/slick/slick.svg#slick') format('svg');
 }
 .slick-prev {
   left: -25px;
@@ -4651,13 +4647,13 @@ span.klarna-payments-method-cell > img {
   font-size: 6px;
   line-height: 20px;
   text-align: center;
-  color: #000000;
+  color: black;
   opacity: 0.25;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 .slick-dots li.slick-active button:before {
-  color: #000000;
+  color: black;
   opacity: 0.75;
 }
 .slick-list {
@@ -4737,7 +4733,6 @@ span.klarna-payments-method-cell > img {
   width: fit-content;
   margin: 0 auto;
   margin-top: 8px;
-  width: 120px;
 }
 .product-item-info .product-item-details .price-final_price {
   width: fit-content;
@@ -4818,3 +4813,4 @@ button:not(.primary) {
   color: black;
   opacity: 0.25;
 }
+/*# sourceMappingURL=styles-l.css.map */

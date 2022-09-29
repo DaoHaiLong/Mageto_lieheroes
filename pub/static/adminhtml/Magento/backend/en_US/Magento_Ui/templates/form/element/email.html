@@ -1,1 +1,16 @@
-/var/www/html/magento235/vendor/magento/module-ui/view/base/web/templates/form/element/email.html
+<!--
+/**
+ * Copyright © Magento, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+-->
+<input class="admin__control-text" type="email" data-bind="
+    hasFocus: focused,
+    value: value,
+    attr: {
+        name: inputName,
+        placeholder: placeholder,
+        'aria-describedby': noticeId,
+        id: uid,
+        disabled: disabled
+    }"/>

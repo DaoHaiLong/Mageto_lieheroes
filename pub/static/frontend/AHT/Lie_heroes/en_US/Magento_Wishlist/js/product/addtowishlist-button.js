@@ -1,0 +1,1 @@
+/var/www/html/magento235/vendor/magento/module-wishlist/view/frontend/web/js/product/addtowishlist-button.js

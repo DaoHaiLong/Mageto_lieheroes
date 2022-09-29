@@ -1,1 +1,8 @@
-/var/www/html/magento235/vendor/magento/module-customer/view/adminhtml/web/js/bootstrap/customer-post-action.js
+/**
+ * Copyright © Magento, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+
+require([
+    'Magento_Customer/edit/post-wrapper'
+]);
