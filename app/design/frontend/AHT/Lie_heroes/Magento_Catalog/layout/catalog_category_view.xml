@@ -9,7 +9,7 @@
     <body>
         <referenceContainer name="columns.top">
             <container name="category.view.container" htmlTag="div" htmlClass="category-view" after="-">
-                <block class="Magento\Catalog\Block\Category\View" name="category.image" template="Magento_Catalog::category/image.phtml"/>
+                <block class="AHT\CategorySub\Block\Category\View" name="category.image" template="Magento_Catalog::category/category_sub.phtml"/>
 
             </container>
         </referenceContainer>
@@ -28,18 +28,25 @@
                 </block>
            </container> -->
 
-            <block class="Magento\Cms\Block\Block" name="catalog-category-product-recently" >
+            <!-- <block class="Magento\Cms\Block\Block" name="catalog-category-product-recently" >
                 <arguments>
                     <argument name="block_id" xsi:type="string">catalog-category-product-recently</argument>
                 </arguments>
-            </block>
+            </block> -->
             
-            <block class="Magento\Cms\Block\Block" name="catalog-product-content" after="catalog-category-product-recently">
+           
+            <block class="Magento\Cms\Block\Block" name="widget-product-bestseller" after="catalog-category-product-recently" >
+                <arguments>
+                    <argument name="block_id" xsi:type="string">widget-product-bestseller</argument>
+                </arguments>
+            </block>
+           
+            <block class="Magento\Cms\Block\Block" name="catalog-product-content" after="-" before="catalog.accordion">
                 <arguments>
                     <argument name="block_id" xsi:type="string">catalog-product-content</argument>
                 </arguments>
             </block>
-            <container name="catalog.accordion" htmlTag="div" htmlClass="product-catalog-accordion">
+            <container name="catalog.accordion" htmlTag="div" htmlClass="product-catalog-accordion" after="-">
                 <container name="catalog.accordion.left" htmlTag="div" htmlClass="product-catalog-accordion-left">
                     <block class="Magento\Cms\Block\Block" name="category-random-question-accordion" after="catalog-product-content">
                         <arguments>

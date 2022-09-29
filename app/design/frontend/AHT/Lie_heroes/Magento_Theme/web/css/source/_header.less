@@ -54,6 +54,7 @@
                 color: black;
                 direction: ltr;
                 text-align: left;
+                margin-right: -11px; 
             }
         }
     }
@@ -101,7 +102,7 @@
     // }
     .links {
         position: absolute;
-        right: 40px;
+        right: 59px;
         top: 19px;
         z-index: 999;
         cursor: pointer;
@@ -174,6 +175,22 @@
         speak: none;
         text-align: center;
     }    
+    .minicart-wrapper .action.showcart .counter.qty {
+        background: #ff5501;
+        color: #fff;
+        height: 18px;
+        line-height: 18px;
+        border-radius: 23px;
+        display: inline-block;
+        margin: -6px 0 0 -8px;
+        min-width: 10px;
+        overflow: hidden;
+        padding: 0 3px;
+        text-align: center;
+        white-space: normal;
+        position: absolute;
+    }
+    
 }
 .media-width(@extremum, @break) when (@extremum = 'min') and (@break = @screen__m) {
     // navigation
@@ -263,6 +280,13 @@
     .block-search .action.search[disabled] {
         pointer-events: none;
         opacity: 1;
+    }
+    .block-search .form .minisearch {
+        margin-right: 30px;
+    }
+    .block-search {
+        padding-right: 42px;
+        padding-left: 0;
     }
   
 }

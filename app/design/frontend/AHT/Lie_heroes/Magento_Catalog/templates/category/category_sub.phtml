@@ -1,0 +1,47 @@
+<?php
+/**
+ * Copyright © Magento, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+?>
+<?php
+/**
+ * Category view template
+ *
+ * @var $block \Magento\Catalog\Block\Category\View
+ */
+
+// phpcs:disable Magento2.Templates.ThisInTemplate.FoundThis
+// phpcs:disable Generic.WhiteSpace.ScopeIndent.IncorrectExact
+// phpcs:disable Magento2.Security.LanguageConstruct.DirectOutput
+?>
+
+<?php
+$category  = $block->getCurrentCategory();
+if ($category) {
+    $subcats = $category->getChildrenCategories();
+    $_helper = $this->helper('Magento\Catalog\Helper\Output');
+    ?>
+    <ul>
+        <?php
+        foreach ($subcats as $subcat) {
+            if ($subcat->getIsActive()) {
+                $_category=$block->getCategorySub($subcat->getId());
+                $subcaturl = $subcat->getUrl();
+
+                $_imgHtml = '';
+                if ($_imgUrl = $_category->getImageUrl()) {
+                        $_imgHtml = '<div class="category-image"><a href = "'.$block->escapeUrl($_category->getUrl()).'" ><img src="'
+                            . $block->escapeUrl($_imgUrl)
+                            . '" alt="'
+                            . $block->escapeHtmlAttr($_category->getName())
+                            . '" title="'
+                            . $block->escapeHtmlAttr($_category->getName())
+                            . '" class="image" /> <div class="title-group"> '.$block->escapeHtmlAttr($_category->getName()).'</div> </a></div>';
+                        $_imgHtml = $_helper->categoryAttribute($_category, $_imgHtml, 'image');
+                        /* @noEscape */ echo $_imgHtml;
+                }
+            }
+        } ?>
+    </ul>
+<?php } ?> 

@@ -1,0 +1,128 @@
+<?php
+/**
+ * Copyright © Magento, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+use Magento\Framework\App\Action\Action;
+
+?>
+<?php
+
+if ($exist = ($this->getBestsellerProduct() && $this->getBestsellerProduct()->getPageSize())) {
+    $fet_prodcollection = $this->getBestsellerProduct();
+    $productcount = $this->getProductLimit();
+    $imagewidth = $this->getProductimagewidth();
+    $imageheight = $this->getProductimageheight();
+    $mode = 'grid';
+    $title = __('Bestseller Products');
+    $type = 'widget-bestseller-grid';
+    $image = 'bestseller_products_content_widget_grid';
+    $templateType = \Magento\Catalog\Block\Product\ReviewRendererInterface::SHORT_VIEW;
+    $array=[];
+}
+?>
+
+<?php if ($exist):?>
+ 
+<div class="block widget block-bestseller-products <?php /* @escapeNotVerified */ echo $mode; ?>">
+    <div class="block-title">
+        <strong role="heading" aria-level="2"><?php /* @escapeNotVerified */ echo $title; ?></strong>
+    </div>
+    <?php if (!$fet_prodcollection->count()): ?>
+        <div class="message info empty"><div><?php echo __('We can\'t find products matching the selection.') ?></div></div>
+    <?php else: ?>
+        <div class="block-content">
+            <?php /* @escapeNotVerified */ echo '<!-- ' . $image . '-->' ?>
+            <div class="products-<?php /* @escapeNotVerified */ echo $mode; ?> <?php /* @escapeNotVerified */ echo $mode; ?>">
+                <ol class="product-items <?php /* @escapeNotVerified */ echo $type; ?>"  style="max-width:100% !important;">
+                    <?php $iterator = 1; ?>
+                    <?php foreach ($fet_prodcollection as $item):
+                        $parent_id = $block->getParentProductConfig($item->getProductId());
+                        if(isset($parent_id)){
+                            $_product =$this->getLoadProduct($parent_id);
+                        }else{
+                            $_product =$this->getLoadProduct($item->getProductId());
+                        }
+                    ?>
+                    <?php /* @escapeNotVerified */ echo($iterator++ == 1) ? '<li class="product-item best-seller-item">' : '</li><li class="product-item best-seller-item" style="width:22% !important;">' ?>
+                    <div class="product-item-info">
+                        <?php 
+                            $image_url = $block->imageHelperObj()->init($_product, 'product_page_image_small')
+                            ->setImageFile($_product->getFile())
+                            ->resize($imagewidth,$imageheight)
+                            ->getUrl();
+                        ?>
+                        <a href="<?php /* @escapeNotVerified */ echo $_product->getProductUrl() ?>" class="product-item-photo" >
+                            <img src="<?php echo  $image_url;?>" alt="<?php echo $this->escapeHtml($_product->getName()) ?>" style="height:240px"/>
+                        </a>
+                        <div class="product-item-details">
+                            <?php if ($templateType) : ?>
+                                    <?= $block->getReviewsSummaryHtml( $_product, $templateType) ?>
+                            <?php endif; ?>
+                            <strong class="product-item-name" style="width: auto ;">
+                                <a title="<?php echo $block->escapeHtml($_product->getName()) ?>" href="<?php /* @escapeNotVerified */ echo $_product->getProductUrl() ?>" class="product-item-link">
+                                    <?php echo $block->escapeHtml($_product->getName()) ?>
+                                </a>
+                            </strong>
+                            <?php
+                                echo $this->getProductPriceHtml($_product, $type);
+                            ?>
+                            <!-- Qty -->
+                            <div class="best-seller-qty" style="margin: 0 80px;">
+                                Sold: <?php echo number_format($item->getQtyOrdered(),0);?>
+                            </div> 
+                            <div class="product-item-actions">
+                                <div class="actions-primary">
+                                    <?php if ($_product->isSaleable()): ?>
+                                        <?php if ($_product->getTypeInstance()->hasRequiredOptions($_product)): ?>
+                                            <button class="action tocart primary" data-mage-init='{"redirectUrl":{"url":"<?php /* @escapeNotVerified */ echo $block->getAddToCartUrl($_product) ?>"}}' type="button" title="<?php /* @escapeNotVerified */ echo __('Add to Bag') ?>">
+                                                <span><?php /* @escapeNotVerified */ echo __('Add to Bag') ?></span>
+                                            </button>
+                                        <?php else: ?>
+                                        <?php
+                                            $postDataHelper = $this->helper('Magento\Framework\Data\Helper\PostHelper');
+                                            $postData = $postDataHelper->getPostData($block->getAddToCartUrl($_product), ['product' => $_product->getId()]);
+                                        ?>
+                                            <button class="action tocart primary" data-post='<?php /* @escapeNotVerified */ echo $postData; ?>' type="button" title="<?php /* @escapeNotVerified */ echo __('Add to Bag') ?>">
+                                                <span><?php /* @escapeNotVerified */ echo __('Add to Bag') ?></span>
+                                            </button>
+                                        <?php endif; ?>
+                                    <?php else: ?>
+                                        <?php if ($_product->getIsSalable()): ?>
+                                            <div class="stock available"><span><?php /* @escapeNotVerified */ echo __('In stock') ?></span></div>
+                                        <?php else: ?>
+                                            <div class="stock unavailable"><span><?php /* @escapeNotVerified */ echo __('Out of stock') ?></span></div>
+                                        <?php endif; ?>
+                                    <?php endif; ?>
+                                </div>
+                            </div>
+                        </div>    
+                    </div>
+                    <?php echo($iterator == count($fet_prodcollection)+1) ? '</li>' : '' ?>
+                    <?php endforeach ?>
+                </ol>  
+                <button class="load-more-product" type="submit">Show More</button>
+            </div>
+        </div>
+    <?php endif; ?>
+</div>
+<?php endif;?>
+<script>
+     <?php if ($iterator >  $block->getData('products_per_list')):?>  
+        require(['jquery'], function($) {
+            $(document).ready(function() {
+                $(".best-seller-item").css("display", "none");
+                $(".best-seller-item").slice(0, <?= $block->getData('products_per_list')?>).show();
+                $(".load-more-product").on("click", function(e) {
+                    e.preventDefault();
+                    $(".best-seller-item:hidden").slice(0, <?= $block->getData('products_per_list')?>).slideDown();
+                    if ($(".best-seller-item:hidden").length == 0) {
+                        $(".load-more-product").remove();
+                    }
+                });
+            }) 
+                 
+        });
+    <?php endif;?>
+      
+</script>
