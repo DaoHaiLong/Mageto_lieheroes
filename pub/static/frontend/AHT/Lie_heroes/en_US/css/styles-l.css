@@ -40,6 +40,10 @@
 .form.send.friend .g-recaptcha {
   margin-top: 40px;
 }
+.block-bestseller-products .block-content .best-seller-qty img:hover {
+  transform: rotate3d(1, 1, 1, 90deg);
+  transition: all 1.5s;
+}
 /**
  * Copyright 2016 Amazon.com, Inc. or its affiliates. All Rights Reserved.
  *
@@ -4186,7 +4190,6 @@ span.klarna-payments-method-cell > img {
   }
   .page-layout-2columns-left .column.main {
     width: 100%;
-    float: none;
   }
   .page-layout-2columns-left .main {
     padding-left: 0;
@@ -4264,6 +4267,19 @@ span.klarna-payments-method-cell > img {
   }
   .block-bestseller-products .load-more-product {
     margin: 28px 44.5%;
+  }
+  .table-wrapper.orders-recent {
+    margin-top: 0;
+  }
+  .block.related .products-related {
+    display: block;
+    justify-content: unset !important;
+  }
+  .block.related .products-related .product-items {
+    display: block;
+  }
+  .block.upsell .products-upsell {
+    display: block;
   }
 }
 @media all and (min-width: 1024px), print {

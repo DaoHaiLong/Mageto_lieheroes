@@ -44,7 +44,7 @@ if ($exist = ($this->getBestsellerProduct() && $this->getBestsellerProduct()->ge
                             $_product =$this->getLoadProduct($item->getProductId());
                         }
                     ?>
-                    <?php /* @escapeNotVerified */ echo($iterator++ == 1) ? '<li class="product-item best-seller-item">' : '</li><li class="product-item best-seller-item" style="width:22% !important;">' ?>
+                    <?php /* @escapeNotVerified */ echo($iterator++ == 1) ? '<li class="product-item best-seller-item" style="width:22% !important; margin-left: 2%;">' : '</li><li class="product-item best-seller-item" style="width:22% !important;">' ?>
                     <div class="product-item-info">
                         <?php 
                             $image_url = $block->imageHelperObj()->init($_product, 'product_page_image_small')
